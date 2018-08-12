@@ -1,0 +1,37 @@
+{
+  "name": "majestic-countdown-timer",
+  "version": "1.0.0",
+  "description": "This plugin provides an easy way to add a countdown timer to your site.",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.24.6",
+    "gulp": "^3.8.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-zip": "^4.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hassanrazmy/majestic-countdown-timer.git"
+  },
+  "keywords": [
+    "countdown-timer",
+    "timer",
+    "clock",
+    "recipe",
+    "time"
+  ],
+  "author": "M Hassan Raza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hassanrazmy/majestic-countdown-timer/issues"
+  },
+  "homepage": "https://github.com/hassanrazmy/majestic-countdown-timer#readme"
+}

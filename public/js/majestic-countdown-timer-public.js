@@ -5581,16 +5581,16 @@ jQuery(document).ready(function() {
                 //audioTicking.loop();
             },
             stop: function() {
-                $('#alarm-clock-start').text('Start Clock').removeClass('reset-alarm').addClass('alarm-clock-start');
+                $('#alarm-clock-start').text('Start Clock').removeClass('reset-alarm').addClass('countdown-start');
                 audioTicking.pause();
                 audioAlarm.play();
             }
         }
     });
 
-    jQuery('#alarm-clock-start').click(function(e) {
-        if($(this).hasClass('alarm-clock-start')){
-            $(this).text('Reset').removeClass('alarm-clock-start').addClass('reset-alarm');
+    jQuery('#countdown-start').click(function(e) {
+        if($(this).hasClass('countdown-start')){
+            $(this).text('Reset').removeClass('countdown-start').addClass('reset-alarm');
             $hours = $("#hours").val();
             $mins = $("#minutes").val();
             $secs = $("#seconds").val();
@@ -5598,7 +5598,7 @@ jQuery(document).ready(function() {
             clock.setTime($time);
             clock.start();
         } else {
-            $(this).text('Start Clock').removeClass('reset-alarm').addClass('alarm-clock-start');
+            $(this).text('Start Clock').removeClass('reset-alarm').addClass('countdown-start');
             clock.reset();
         }
         e.preventDefault();

@@ -1,0 +1,247 @@
+/* ======================= */
+/* Countdown Default Style */
+/* ======================= */
+
+.countdown-wrap {
+  .flip-clock-wrapper {
+    margin-left: 0;
+    padding-left: 6px;
+
+    ul {
+      margin: 0 3px 5px !important;
+      width: 32px;
+      height: 38px;
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 20px;
+      border-radius: 3px;
+      background: #aaaaaa;
+      box-shadow: 0 2px 5px #aaaaaa;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      li {
+        line-height: 20px;
+
+        a {
+          display: block !important;
+
+          div {
+
+            &.up {
+              &:after {
+                :after {
+                  top: 18px;
+                  left: 0;
+                  background-color: rgba(0, 0, 0, 0.1);
+                }
+              }
+            }
+
+            &.down {
+              border-bottom-left-radius: 3px;
+              border-bottom-right-radius: 3px;
+            }
+
+            .inn {
+              font-size: 24px;
+              line-height: 36px;
+              border-radius: 3px;
+              background-color: #71bc44;
+              color: #ffffff;
+              text-shadow: none;
+            }
+          }
+
+        }
+      }
+
+      .play {
+
+        .flip-clock-before {
+
+          .up {
+
+            .shadow {
+              background: -moz-linear-gradient(top, rgba(100, 100, 100, 0.1) 0%, #333333 100%);
+              background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(100, 100, 100, 0.1)), color-stop(100%, #333333));
+              background: linear, top, rgba(100, 100, 100, 0.1) 0%, #333333 100%;
+              background: -ms-linear-gradient(top, rgba(100, 100, 100, 0.1) 0%, #333333 100%);
+              background: linear, to bottom, rgba(100, 100, 100, 0.1) 0%, #333333 100%;
+            }
+          }
+
+          .down {
+
+            .shadow {
+              background: -moz-linear-gradient(top, #333333 0%, rgba(100, 100, 100, 0.1) 100%);
+              background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #333333), color-stop(100%, rgba(100, 100, 100, 0.1)));
+              background: linear, top, #333333 0%, rgba(100, 100, 100, 0.1) 100%;
+              background: -ms-linear-gradient(top, #333333 0%, rgba(100, 100, 100, 0.1) 100%);
+              background: linear, to bottom, #333333 0%, rgba(100, 100, 100, 0.1) 100%;
+            }
+          }
+
+        }
+
+        .flip-clock-active {
+
+          .up {
+
+            .shadow {
+              background: -moz-linear-gradient(top, rgba(100, 100, 100, 0.1) 0%, #333333 100%);
+              background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(100, 100, 100, 0.1)), color-stop(100%, #333333));
+              background: linear, top, rgba(100, 100, 100, 0.1) 0%, #333333 100%;
+              background: -ms-linear-gradient(top, rgba(100, 100, 100, 0.1) 0%, #333333 100%);
+              background: linear, to bottom, rgba(100, 100, 100, 0.1) 0%, #333333 100%;
+            }
+          }
+
+          .down {
+
+            .shadow {
+              background: -moz-linear-gradient(top, #333333 0%, rgba(100, 100, 100, 0.1) 100%);
+              background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #333333), color-stop(100%, rgba(100, 100, 100, 0.1)));
+              background: linear, top, #333333 0%, rgba(100, 100, 100, 0.1) 100%;
+              background: -ms-linear-gradient(top, #333333 0%, rgba(100, 100, 100, 0.1) 100%);
+              background: linear, to bottom, #333333 0%, rgba(100, 100, 100, 0.1) 100%;
+            }
+          }
+
+        }
+      }
+    }
+
+    .flip-clock-divider {
+      width: 9px;
+      height: 40px;
+
+      &:first-of-type {
+        display: none;
+      }
+
+      .flip-clock-dot {
+        width: 5px;
+        height: 5px;
+        left: 2px;
+        background-color: #91a1b3;
+
+        &.top {
+          top: 11px;
+        }
+
+        &.bottom {
+          bottom: 14px;
+        }
+      }
+
+      .flip-clock-label {
+        display: none;
+      }
+    } /* End of .flip-clock-divider */
+
+  } /* End of .flip-clock-wrapper */
+
+  .countdown-labels {
+    display: -ms-flexbox;
+    display: flex;
+    /* Safari 6.1+ */
+    -ms-flex: 1;
+    /* IE 10 */
+    flex: 1;
+    margin: 15px 0 0;
+
+    label {
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      text-align: center;
+      margin: 0 5px;
+    }
+  }
+
+  .countdown-inputs {
+    display: -ms-flexbox;
+    display: flex;
+    /* Safari 6.1+ */
+    -ms-flex: 1;
+    /* IE 10 */
+    flex: 1;
+    margin-bottom: 25px;
+
+    input {
+      width: 33.33%;
+      margin: 0 5px;
+
+      &:focus {
+        border-color: #6ebe3b;
+      }
+    }
+  }
+
+  #countdown-start {
+    margin: 0 0 6px 5px;
+    transition: all 200ms linear;
+  }
+
+  .ticking-control {
+    margin: -7px 6px 0 0;
+    float: right;
+
+    label {
+      font-size: 12px;
+      margin-bottom: 3px;
+      display: block;
+    }
+
+    .ticking-wrap {
+      display: block;
+      float: right;
+      position: relative;
+      width: 50px;
+      height: 26px;
+      background-color: #6ebe3b;
+      border-radius: 5px;
+      padding: 1px;
+      transition: all 200ms linear;
+
+      .ticking-btn {
+        display: inline-block;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 30px;
+        height: 22px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        font-size: 12px;
+        line-height: 22px;
+        font-weight: bold;
+        color: #000000;
+        text-align: center;
+        transition: all 200ms linear;
+        cursor: pointer;
+        box-shadow: 0 0 2px #333333;
+
+        &.active {
+          left: 18px;
+        }
+      }
+
+      input {
+        display: none;
+      }
+
+      *.off {
+        background-color: #666666;
+      }
+
+    } /* End of .ricking-wrap */
+  } /* End of .ticking-control */
+
+} /* End of .countdown-wrap */
+
+.login-contents {
+    margin-top: 50px;
+}
