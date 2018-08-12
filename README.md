@@ -1,25 +1,24 @@
-# Quick and Easy Testimonials Plugin
+# Majestic Countdown Timer Plugin
 
-This plugin provides a quick and easy way to add testimonials to your site.
+This plugin provides an easy way to add a countdown timer to your site.
 
 ### Features
 
-* Easily add testimonial using custom post type ( This post type is not public to avoid detail page URLs mess ).
-* Display Testimonials in simple and center aligned style.
-* Testimonials text and links styles are inherited from currently active theme.
+* Easily add countdown timer sidebar widget in any of the widgetized areas.
+* Display Timer in multiple styles.
+* Option to lock the timer to start from a specific time.
 * Translation Ready and comes with related pot and po files.
-* Works fine with RTL (Right to Left) languages as styles are center aligned. ( No special styles are included for RTL )
-* Compatible with Visual Composer Plugin
+* Shortcode available to use in post/page editors.
 
 ### Documentation
 
-* Display all testimonials. Shortcode `[testimonials]`
-* Display specific number of testimonials. Shortcode `[testimonials count="3"]`
-* Display only testimonials related to a category. Shortcode `[testimonials filter="category-slug"]`
-* Display single testimonial. Shortcode `[testimonials id="123"]`
+* Display countdown timer by adding Widget in any of the available widgetized areas from Admin side > Appearance Widgets.
+* Select any of the available styles by selecting it from the admin side widget options.
+* Display timer inside the post or a page using `[mt-countdown]` shortcode.
+* Display any of the available styles by using style attribute in the shortcode. Options are 'elegant, dark, foodie, sky'.
 
 ## Installation
 
 1. Unzip the downloaded package
-2. Upload `quick-and-easy-testimonials` to the `/wp-content/plugins/` directory
+2. Upload `majestic-countdown-timer` to the `/wp-content/plugins/` directory
 3. Activate the plugin through the 'Plugins' menu in WordPress
