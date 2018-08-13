@@ -5581,7 +5581,7 @@ jQuery(document).ready(function() {
                 //audioTicking.loop();
             },
             stop: function() {
-                $('#alarm-clock-start').text('Start Clock').removeClass('reset-alarm').addClass('countdown-start');
+                $('#countdown-start').text('Start Clock').removeClass('reset-alarm').addClass('countdown-start');
                 audioTicking.pause();
                 audioAlarm.play();
             }

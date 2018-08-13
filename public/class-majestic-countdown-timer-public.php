@@ -62,6 +62,8 @@ class Majestic_Countdown_Timer_Public {
 	public function enqueue_styles() {
 
 		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/majestic-countdown-timer-public.css', array(), $this->version, 'all' );
+		wp_enqueue_style( 'countdown-default-style', plugin_dir_url( __FILE__ ) . 'css/majestic-countdown-default-styles.css', array(), $this->version, 'all' );
+		//wp_enqueue_style( 'countdown-style-foodie', plugin_dir_url( __FILE__ ) . 'css/majestic-countdown-style-foodie.css', array(), $this->version, 'all' );
 
 	}
 

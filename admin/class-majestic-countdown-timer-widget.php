@@ -48,11 +48,9 @@ class Majestic_Countdown_Timer_Widget extends WP_Widget {
 		extract( $args );
 		extract( $instance );
 
-		global $title, $before_widget, $after_widget, $before_title, $after_title;
-
 		$title = apply_filters( 'widget_title', $title );
 
-		echo $before_widget;
+		//echo $before_widget;
 		?>
 		<?php
 		echo ( $title ) ? $before_title . $title . $after_title : false;
@@ -89,7 +87,7 @@ class Majestic_Countdown_Timer_Widget extends WP_Widget {
 
 		</div>
 		<?php
-		echo $after_widget;
+		//echo $after_widget;
 	}
 
 	/**
